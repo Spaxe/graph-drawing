@@ -6,8 +6,10 @@ def setup():
     strokeWeight(1)
     fill(100)
     
+    intro()
+    
     for i in range(10):
-        prin(i, numbers[i]);
+        prin(i, numbers[i])
     
 def draw():
     background(0)
