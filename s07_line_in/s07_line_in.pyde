@@ -37,9 +37,9 @@ def draw():
     elif mode == 1:
         for i in xrange(n):
             traces[i] = [(traces[i][0] +
-                         cos(float(i)/n * 2 * PI) * height/4 + line_in.left.get(i) * height/2) / 2, 
+                         cos(float(i)/n * 2 * PI) * height/6 + abs(line_in.left.get(i)) * cos(float(i)/n * 2 * PI) * height) / 2, 
                          (traces[i][1] + 
-                         sin(float(i)/n * 2 * PI) * height/4 + line_in.right.get(i) * height/2) / 2]
+                         sin(float(i)/n * 2 * PI) * height/6 + abs(line_in.right.get(i)) * sin(float(i)/n * 2 * PI) * height) / 2]
             
     elif mode == 2:
         for i in xrange(n):
